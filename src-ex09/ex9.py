@@ -31,6 +31,6 @@ X_test_categ = enc.transform(data_test[['LocationNormalized', 'ContractTime']].t
 
 X_test = hstack([X_test_desc, X_test_categ])
 
-predict = clf.predict(X_test)
+predict = clf.predict(X=X_test)
 
 print(predict)

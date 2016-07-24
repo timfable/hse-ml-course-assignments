@@ -34,6 +34,18 @@ sklearn.ensemble.RandomForestClassifier
 sklearn.ensemble.RandomForestRegressor
 
 sklearn.cross_validation.cross_val_score
+sklearn.cross_validation.KFold
+```
 
-sklearn.metrics.r2_score
+## ex12 - радиентный бустинг над решающими деревьями
+
+* Работа с градиентным бустингом
+* Подбор гиперпараметров
+* Сравнение разных способов построения композиций
+* Выбор между случайным лесом и градиентным бустингом
+* Использование метрики log-loss
+
+```python
+sklearn.cross_validation.train_test_split
+sklearn.ensemble.GradientBoostingClassifier
 ```

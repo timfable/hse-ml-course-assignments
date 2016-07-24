@@ -33,10 +33,10 @@ tree_auc = roc_auc_score(scores[:, 0], scores[:, 4])
 
 print("rocauc logreg %.3f, svm %.3f, knn %.3f, tree %.3f" % (lr_auc, svm_auc, knn_auc, tree_auc))
 
-lr_precision, lr_recall, _ = precision_recall_curve(scores[:, 0], scores[:, 1])
-svm_precision, svm_recall, _ = precision_recall_curve(scores[:, 0], scores[:, 2])
-knn_precision, knn_recall, _ = precision_recall_curve(scores[:, 0], scores[:, 3])
-tree_precision, tree_recall, _ = precision_recall_curve(scores[:, 0], scores[:, 4])
+lr_precision, lr_recall, lr_ = precision_recall_curve(scores[:, 0], scores[:, 1])
+svm_precision, svm_recall, svm_ = precision_recall_curve(scores[:, 0], scores[:, 2])
+knn_precision, knn_recall, knn_ = precision_recall_curve(scores[:, 0], scores[:, 3])
+tree_precision, tree_recall, tree_ = precision_recall_curve(scores[:, 0], scores[:, 4])
 
 lr_answer = max(lr_precision[lr_recall >= 0.7])
 svm_answer = max(svm_precision[svm_recall >= 0.7])
