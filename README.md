@@ -30,14 +30,13 @@ sklearn.preprocessing.scale
 * Подбор параметров случайного леса
 
 ```python
-sklearn.ensemble.RandomForestClassifier
 sklearn.ensemble.RandomForestRegressor
 
 sklearn.cross_validation.cross_val_score
 sklearn.cross_validation.KFold
 ```
 
-## ex12 - радиентный бустинг над решающими деревьями
+## ex12 - Градиентный бустинг над решающими деревьями
 
 * Работа с градиентным бустингом
 * Подбор гиперпараметров
@@ -46,6 +45,9 @@ sklearn.cross_validation.KFold
 * Использование метрики log-loss
 
 ```python
-sklearn.cross_validation.train_test_split
 sklearn.ensemble.GradientBoostingClassifier
+
+sklearn.cross_validation.train_test_split
+
+sklearn.metrics.log_loss
 ```
